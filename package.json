@@ -1,0 +1,66 @@
+{
+	"name": "corvus-rich-editor",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"babel": {
+		"presets": [
+			"react",
+			"env",
+			"stage-0"
+		]
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "rm -rf dist && NODE_ENV=production npx babel src/PackagedComponent --out-dir dist --copy-files",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@excalidraw/excalidraw": "^0.17.3",
+		"@lexical/clipboard": "0.14.3",
+		"@lexical/code": "0.14.3",
+		"@lexical/file": "0.14.3",
+		"@lexical/hashtag": "0.14.3",
+		"@lexical/headless": "^0.14.3",
+		"@lexical/link": "0.14.3",
+		"@lexical/list": "0.14.3",
+		"@lexical/mark": "0.14.3",
+		"@lexical/overflow": "0.14.3",
+		"@lexical/plain-text": "0.14.3",
+		"@lexical/react": "0.14.3",
+		"@lexical/rich-text": "0.14.3",
+		"@lexical/selection": "0.14.3",
+		"@lexical/table": "0.14.3",
+		"@lexical/utils": "0.14.3",
+		"antd": "^4.24.15",
+		"katex": "^0.15.2",
+		"lexical": "0.14.3",
+		"lodash": "^4.17.21",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"y-websocket": "^1.5.4",
+		"yjs": "^13.6.7"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.79",
+		"@types/react-dom": "^18.2.25",
+		"@typescript-eslint/eslint-plugin": "^7.2.0",
+		"@typescript-eslint/parser": "^7.2.0",
+		"@vitejs/plugin-react": "^4.2.1",
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.6",
+		"typescript": "^5.2.2",
+		"vite": "^5.2.0"
+	}
+}

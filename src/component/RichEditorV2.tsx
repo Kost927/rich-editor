@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'react';
-
 import { LexicalComposer } from '@lexical/react/LexicalComposer';
-import classNames from 'classnames';
 
 import Editor from './Editor';
 import { SharedAutocompleteContext } from './context/SharedAutocompleteContext';
 import { SharedHistoryContext } from './context/SharedHistoryContext';
-import './index.css';
+import './RichEditorV2.css';
 import PlaygroundNodes from './nodes/PlaygroundNodes';
 import { TableContext } from './plugins/TablePlugin';
 import CorvusTheme from './themes/CorvusTheme';
 import { checkIsStringValidHtml } from './utils/isStringValidHtml';
+import classNames from 'classnames';
 
 export type RichEditorV2 = {
 	onChange?: ({ editorState, htmlString }) => void;

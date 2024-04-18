@@ -29,7 +29,6 @@ import {
 } from 'lexical';
 
 import useModal from '../../hooks/useModal';
-import catTypingGif from '../../images/cat-typing.gif';
 import { INSERT_COLLAPSIBLE_COMMAND } from '../CollapsiblePlugin';
 import { InsertEquationDialog } from '../EquationsPlugin';
 import { INSERT_EXCALIDRAW_COMMAND } from '../ExcalidrawPlugin';
@@ -247,15 +246,6 @@ function getBaseOptions(editor: LexicalEditor, showModal: ShowModal) {
 				showModal('Insert Equation', (onClose) => (
 					<InsertEquationDialog activeEditor={editor} onClose={onClose} />
 				)),
-		}),
-		new ComponentPickerOption('GIF', {
-			icon: <i className="icon gif" />,
-			keywords: ['gif', 'animate', 'image', 'file'],
-			onSelect: () =>
-				editor.dispatchCommand(INSERT_IMAGE_COMMAND, {
-					altText: 'Cat typing on a laptop',
-					src: catTypingGif,
-				}),
 		}),
 		new ComponentPickerOption('Image', {
 			icon: <i className="icon image" />,

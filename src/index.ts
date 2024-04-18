@@ -1,1 +1,1 @@
-export { default } from './RichEditorV2';
+export { default } from './component/RichEditorV2';

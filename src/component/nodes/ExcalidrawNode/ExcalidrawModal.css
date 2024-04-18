@@ -35,11 +35,8 @@
 .ExcalidrawModal__row {
 	position: relative;
 	padding: 40px 5px 5px;
-	width: 70vw;
-	height: 70vh;
-	border-radius: 8px;
-	box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
-		inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100%;
 }
 .ExcalidrawModal__row > div {
 	border-radius: 5px;
@@ -47,13 +44,12 @@
 .ExcalidrawModal__modal {
 	position: relative;
 	z-index: 10;
-	top: 50px;
-	width: auto;
+	width: 100vw;
+	height: 100vh;
 	left: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 8px;
 	background-color: #eee;
 }
 .ExcalidrawModal__discardModal {

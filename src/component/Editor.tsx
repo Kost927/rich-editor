@@ -218,7 +218,7 @@ export default function Editor({
 							isLinkEditMode={isLinkEditMode}
 							setIsLinkEditMode={setIsLinkEditMode}
 						/>
-						<TableCellActionMenuPlugin anchorElem={floatingAnchorElem} cellMerge={true} />
+						<TableCellActionMenuPlugin anchorElem={floatingAnchorElem} cellMerge={true}/>
 						<FloatingTextFormatToolbarPlugin
 							anchorElem={floatingAnchorElem}
 							setIsLinkEditMode={setIsLinkEditMode}
